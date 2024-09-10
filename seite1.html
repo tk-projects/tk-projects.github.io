@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unterseite 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ffffff; /* Light text color */
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #333333;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .content h1 {
+            margin: 0;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+            color: #00bfff;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html">Zurück zur Hauptseite</a>
+        <a href="seite1.html">Unterseite 1</a>
+        <a href="seite2.html">Unterseite 2</a>
+        <a href="seite3.html">Unterseite 3</a>
+    </div>
+    <div class="content">
+        <h1>Willkommen auf Unterseite 1!</h1>
+    </div>
+</body>
+</html>
