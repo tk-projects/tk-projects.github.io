@@ -16,9 +16,24 @@
         }
         .sidebar {
             width: 200px;
-            background-color: #333333; /* Slightly lighter for sidebar */
+            background-color: #1a1a1a; /* Same background color as the body */
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+        .sidebar h2 {
+            font-size: 24px; /* Larger font size for Max Mustermann */
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #ffffff; /* Light text color for links */
+            font-size: 18px; /* Larger font size for the links */
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+            color: #00bfff; /* Light blue on hover */
         }
         .content {
             flex: 1;
@@ -29,21 +44,13 @@
         }
         .content h1 {
             margin: 0;
-        }
-        .sidebar a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #ffffff; /* Light text color for links */
-        }
-        .sidebar a:hover {
-            text-decoration: underline;
-            color: #00bfff; /* Light blue on hover */
+            font-size: 32px; /* Adjust size of the welcome text if necessary */
         }
     </style>
 </head>
 <body>
     <div class="sidebar">
+        <h2>Max Mustermann</h2> <!-- Larger Max Mustermann -->
         <a href="seite1.html">Unterseite 1</a>
         <a href="seite2.html">Unterseite 2</a>
         <a href="seite3.html">Unterseite 3</a>
