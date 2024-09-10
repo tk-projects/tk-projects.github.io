@@ -16,19 +16,9 @@
         }
         .sidebar {
             width: 200px;
-            background-color: #333333;
+            background-color: #1a1a1a; /* Same background color as the body */
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-        }
-        .content {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .content h1 {
-            margin: 0;
         }
         .sidebar a {
             display: block;
@@ -40,6 +30,28 @@
             text-decoration: underline;
             color: #00bfff;
         }
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column; /* Stack elements vertically */
+            overflow-y: auto; /* Enable scrolling if content overflows */
+            padding: 20px; /* Add padding around the content */
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0; /* Add space between text and images */
+        }
+        .content p {
+            margin: 20px 0;
+            font-size: 18px; /* Adjust the font size for text */
+        }
+        .content h1 {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
@@ -50,7 +62,20 @@
         <a href="seite3.html">Unterseite 3</a>
     </div>
     <div class="content">
-        <h1>Willkommen auf Unterseite 1!</h1>
+        <h1>SOIL DATA MONITOR</h1>
+        <p>This is a project I have been working on in my free time.
+            The goal is to track and map soil data and display it using 2D and 3D visualizations.
+            To achieve this, a grid of individual sensor nodes is used to measure  the distribution of soil data.
+
+            The data is then displayed to the user, allowing him to draw conclusions or automate processes. 
+            For example, watering behavior can be adjusted based on the knowledge of the water distribution in the soil.</p>
+        <img src="images/3d_moisture_distribution.png" alt="Bild 1">
+        <p>Hier ist noch ein weiterer Textabschnitt.</p>
+        <img src="images/Oberflächen_Feuchtigkeit.png" alt="Bild 2">
+        <p>Hier ist noch mehr Text.</p>
+        <img src="images/Sensor_1_2_3_all_data.png" alt="Bild 3">
+        <p>Abschließender Text auf der Seite.</p>
+        <img src="bild4.jpg" alt="Bild 4">
     </div>
 </body>
 </html>
