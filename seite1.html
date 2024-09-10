@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unterseite 1</title>
+    <title>Soil Data Monitor</title>
     <style>
+        @import url('https://use.typekit.net/your-adobe-kit-id.css'); /* Proxima Nova Webfont from Adobe Fonts */
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Proxima Nova', Arial, sans-serif; /* Proxima Nova or fallback to Arial */
             margin: 0;
             padding: 0;
             display: flex;
@@ -20,11 +22,16 @@
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
         }
+        .sidebar h2 {
+            font-size: 24px; /* Larger font size for Max Mustermann */
+            margin-bottom: 20px;
+        }
         .sidebar a {
             display: block;
             margin: 10px 0;
             text-decoration: none;
             color: #ffffff;
+            font-size: 18px;
         }
         .sidebar a:hover {
             text-decoration: underline;
@@ -33,29 +40,29 @@
         .content {
             flex: 1;
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align content at the top but with space below the header */
             justify-content: center;
             text-align: center;
-            flex-direction: column; /* Stack elements vertically */
-            overflow-y: auto; /* Enable scrolling if content overflows */
-            padding: 20px; /* Add padding around the content */
+            flex-direction: column;
+            padding: 20px;
         }
         .content img {
             max-width: 100%;
             height: auto;
-            margin: 20px 0; /* Add space between text and images */
+            margin: 20px 0;
         }
         .content p {
             margin: 20px 0;
-            font-size: 18px; /* Adjust the font size for text */
+            font-size: 18px;
         }
         .content h1 {
-            margin-bottom: 40px;
+            margin-bottom: 60px; /* Increased margin to push the header further down */
         }
     </style>
 </head>
 <body>
     <div class="sidebar">
+        <h2>Max Mustermann</h2> <!-- Added Max Mustermann -->
         <a href="index.html">WORK</a>
         <a href="seite1.html">Soil Data Monitor</a>
         <a href="seite2.html">Unterseite 2</a>
@@ -66,18 +73,17 @@
         <p>This is a project I have been working on in my free time.
             
             The goal is to track and map soil data and display it using 2D and 3D visualizations.
-            To achieve this, a grid of individual sensor nodes is used to measure  the distribution of soil data.
+            To achieve this, a grid of individual sensor nodes is used to measure the distribution of soil data.
 
             The data is then displayed to the user, allowing him to draw conclusions or automate processes. 
             For example, watering behavior can be adjusted based on the knowledge of the water distribution in the soil.</p>
         <img src="images/Sensor_1_2_3_all_data.png" alt="Bild 3">
-        <p>The measured data can viewed for different time periods and at different sensor nodes. </p>
+        <p>The measured data can be viewed for different time periods and at different sensor nodes.</p>
         <img src="images/3d_moisture_distribution.png" alt="Bild 1">
         <p>The goal is to map the entire ground data based on the individual sensor nodes. In this example, 
             it can be observed that the moisture levels are higher at greater depths. However, there is still
             a variation in distribution within each depth layer.</p>
         <img src="images/Oberflächen_Feuchtigkeit.png" alt="Bild 2">
-
         
         <p>Abschließender Text auf der Seite.</p>
     </div>
